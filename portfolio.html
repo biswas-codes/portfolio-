@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biswas Khadka - Portfolio</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #000000;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            background: #1f2937;
+            color: 000000;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f59e0b;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #000000, #000000);
+            color: #b711e0;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .portfolio {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .contact-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #1f2937;
+            transition: color 0.3s;
+        }
+        .contact-icons a:hover {
+            color: #f59e0b;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f2937;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html"><div class="logo">Biswas Khadka</div></a>
+            </nav>
+        </header>
+        
+        <div class="hero">
+            <h1>Welcome to my Digital World!</h1>
+            <p>Explore my projects and see what I can create.</p>
+        </div>
+        
+        <main>
+            <section id="projects" class="portfolio">
+                <h2 style="color: #b711e0; margin-bottom: 20px;">My Featured Projects</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <a href="hovernike/nike.html" target="_blank">
+                            <img src="nike.png" alt="Hover Nike Project">
+                            <h3 style="color: #b711e0;">Hover Nike</h3>
+                            <p style="color: #b711e0;">Interactive product showcase.</p>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="project1/project.html" target="_blank">
+                            <img src="clock.png" alt="Digital Clock Project" height="250px">
+                            <h3 style="color: #b711e0;">Digital Clock</h3>
+                            <p style="color: #b711e0;">Real-time digital time display.</p>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="hovernike/house.html" target="_blank">
+                            <img src="house.png" alt="House Design Project" height="250px">
+                            <h3 style="color: #b711e0;" style="padding-top: 20px;">House Design</h3>
+                            <p style="color: #b711e0;">Conceptual architectural design.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="contact">
+                <h2>Let's Connect</h2>
+                <p>Feel free to reach out for collaborations or inquiries.</p>
+                <div class="contact-icons">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Biswas Khadka | All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
